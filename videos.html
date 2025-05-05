@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KimPau Videos</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .folder {
+      cursor: pointer;
+      font-weight: bold;
+      margin: 1rem 0 0.5rem;
+      color: #cc6699;
+    }
+    .folder:hover {
+      text-decoration: underline;
+    }
+    .video-links {
+      display: none;
+      margin-left: 2rem;
+    }
+    .video-links a {
+      display: block;
+      margin: 0.2rem 0;
+      color: black;
+      text-decoration: none;
+    }
+    .video-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  
+</head>
+<body>
+  <header>
+    <h1>KimPau Videos</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="videos.html">KimPau Videos</a>
+    <a href="photos.html">KimPau Photos</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Content List (Videos)</h2>
+      <div class="folder" onclick="toggleFolder('fiesta')">📁 2025 KimPau Fiestas</div>
+      <div class="video-links" id="fiesta">
+        <a href="https://drive.google.com/file/d/15YFmre9ss-8TDI0WbSojn9u6kqwX-RmF/view?usp=sharing" target="_blank">🎥 Paulo Serenades Santiago</a>
+      </div>
+    </section>
+  </main>
+  
+
+  <footer>
+    <p>© 2025 website design and coding by @bbchiuwariwap</p>
+  </footer>
+  <script>
+    function toggleFolder(id) {
+      const folder = document.getElementById(id);
+      folder.style.display = folder.style.display === "block" ? "none" : "block";
+    }
+  </script>
+  
+</body>
+</html>
+
